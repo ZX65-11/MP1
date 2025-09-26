@@ -1,13 +1,163 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script defer src = "js/main.js"></script>
     </head>
+    <div id="imageModal" class="modal">
+    <div class="overlay"></div>
+    <span class="close-button">&times;</span>
+    <img class="content" id="modalImage">
+    </div>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+        <header class="stripe" id="top">
+        <nav id = "main_nav"> 
+            <h1 class="title">Zhenshuo Xu</h1> 
+            <div class = "menu">
+                <ul> 
+                    <li><a href= "#home"> home</a></li> 
+                    <li> <a href = "#skills"> skills</a></li>
+                    <li> <a href = "#education"> education</a></li>
+                    <li> <a href = "#projects"> projects</a></li>
+                    <li> <a href = "#video">video</a></li>
+                    <li> <a href = "#contact">contact</a></li>
+                </ul>
+            </div> 
+        </nav>
+        </header>
+        <main id = "main page">
+            <section id="home" >
+                <div class = "hero-content">
+                     <h1 class="title">Zhenshuo Xu</h1>
+                     <p class ="text"> My name is Zhenshuo Xu. I just graduated from UC Davis with a bachelor's degree
+                    in Computer Science in December 2024, and this is my first year at UIUC.
+                    I'm particularly interested in machine learning, systems, and computer 
+                    graphics, and I hope to continue to develop my skills in these areas 
+                    during my time at UIUC.
+
+                    In my daily life, I enjoy photography, fitness, and trying new 
+                    technologies. I'm thrilled to meet you all here and look forward 
+                    to learning.</p>
+
+                </div> 
+            </section>
+
+            <section id = "skills">
+                <div class = "container">
+                    <h2 class = "section_title">Technology Stack </h2>
+                    <div>
+                        <article class="card"> 
+                            <h3>programming language</h3>
+                            <p>C++, C#, Python, Java</p>
+                        </article>
+                        <article class="card"> 
+                            <h3>web && data</h3>
+                            <p>HTML5, CSS3, JavaScript, MySQL</p>
+                        </article>
+                        <article class="card"> 
+                            <h3>ML</h3>
+                            <p>deep learning,CNN,TensorFlow, PyTorch</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id = "education" class="stripe">
+                <div class = "container">
+                    <h2 class="section_title">Educational background</h2>
+                    <div>
+                        <article class="card"> 
+                            <h3>UC Davis — B.S. CS</h3>
+                            <p>2022 – 2024 • GPA: 3.42/4.0</p>
+                        </article>
+                        <article class="card"> 
+                            <h3>UIUC — mcs</h3>
+                            <p> 2025 fall - </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id = "projects" class="stripe">
+                <div class = "container">
+                    <h2 class="section_title">Project Experience</h2>
+                    <div class="carousel" >
+                        <button class="buttons prev" data-action="prev">&lt;</button>
+                        <div class="projects-grid">
+                            <div class="carousel-track"> 
+                                <div class="card"> 
+                                    <h3>Mushroom Species Classification Model ( Computer Vision Model )</h3>
+                                    <ul>
+                                        <li>Designed and implemented a computer vision model to classify 215 mushroom species and predict edibility (edible or poisonous) with high accuracy. </li>
+                                        <li>Addressed dataset imbalance issues by extensively applying data augmentation technique on a dataset of 3,122 images. </li>
+                                        <li>Leveraged ResNet architecture to optimize classification performance and reduce training time</li>
+                                        <li>Improved model generalization using weighted loss functions, dropout, and L2 regularization, achieving approximately 94% accuracy on validation data while minimizing overfitting on unseen samples. </li>
+                                    </ul>
+                                </div>
+                                <div class="card"> 
+                                    <h3>C++ Logo Interface and Graphics Debugger( Multimedia Applications )</h3>
+                                    <ul>
+                                        <li>Designed and developed a personal logo visualization tool with an interactive graphical interface using C++ and SFML. </li>
+                                        <li>Built all core data structures from scratch, including custom implementations of linked lists and trees, instead of using standard libraries </li>
+                                        <li>Created a lightweight, responsive graphics debugger that allowed real-time adjustments to logo structure and appearance while improving understanding of memory management and rendering performance.</li>
+                                    </ul>
+                                </div>
+                                <div class="card"> 
+                                    <h3>Diabetes Prediction Web Application ( Full-stack & Machine Learning )</h3>
+                                    <ul>
+                                        <li>Built a full-stack web application that allows users to input health metrics and receive real-time diabetes risk assessments.Integrated a deep neural network model trained on health datasets to ensure accurate predictions.</li>
+                                        <li>Designed a clean and intuitive frontend using HTML and CSS, integrated with a Flask backend that hosts a deep neural network trained on medical datasets. </li>
+                                    </ul>
+                                </div>
+                        </div>
+                           
+                    </div> 
+                    <button class="buttons next" data-action="next">&gt;</button>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section id="video">
+            <div class="container">
+                <h2 class="section_title"> video and Modal test</h2>
+
+                <div class="video-container">
+                    <video controls width="100%">
+                        <source src="assets/video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="image-gallery">
+                    <img src="assets/1.jpg" alt="1" class="modal-trigger">
+                    <img src="assets/2.png" alt="2" class="modal-trigger">
+                    <img src="assets/1.jpg" alt="3" class="modal-trigger">
+                </div>
+
+            </div>
+        </section>
+        </main>
+        
+        <footer id="contact" class="stripe">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <a href="mailto:zhenshuo200164@gmail.com">
+                        <i class="fas fa-envelope"></i> zhenshuo200164@gmail.com
+                    </a>
+                    <a> <i class="fas fa-phone"></i> 626-695-9909
+                    </a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/zhenshuo-xu-45a1632a2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2025 Zhenshuo Xu. All Rights Reserved.</p>
+            </div>
+        </footer> 
+     </body>   
 </html>
