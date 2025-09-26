@@ -28,11 +28,11 @@ h1, h2, h3 {
 }
 
 #projects {
-  background: #f4f7e6;
+  background: #d9e3e4;
 }
 
-#hobby {
-  background: #fff8e6;
+#video {
+  background-color: #a1becb;
 }
 
 header, section, footer {
@@ -500,12 +500,10 @@ body.modal-is-open {
   width: 100%;
   max-width: 800px;
   margin: 40px auto 0;
-}
-
-.video-container video {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
+  background-color: rgba(0, 0, 0, 0.85) video;
+  background-color-width: 100%;
+  background-color-height: auto;
+  background-color-border-radius: 8px;
+  background-color-display: block;
 }
 /*# sourceMappingURL=main.css.map */

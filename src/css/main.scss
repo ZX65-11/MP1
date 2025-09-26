@@ -9,8 +9,8 @@ $color-footer: #003153;
 $color-home:   #121826;   
 $color-skills: #f1f5f9;   
 $color-edu:    #e9f5ff;   
-$color-proj:   rgb(244, 247, 230);  
-$color-hobby:  #fff8e6;  
+$color-proj:   rgb(217, 227, 228);  
+$color-hobby:  #a1becb;  
 
 * {
   margin: 0;
@@ -31,7 +31,7 @@ h1, h2, h3 {
 #skills { background: $color-skills; }
 #education { background: $color-edu; }
 #projects { background: $color-proj; }
-#hobby { background: $color-hobby; }
+#video{background-color: $color-hobby;}
 
 
 header, section, footer {
@@ -395,7 +395,7 @@ body.modal-is-open {
   width: 100%;
   max-width: 800px; 
   margin: 40px auto 0; 
-
+  background-color: rgba(0, 0, 0, 0.85)
   video {
     width: 100%; 
     height: auto; 
